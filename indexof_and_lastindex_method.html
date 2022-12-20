@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=['Jan', 'March', 'April', 'June'];
+        document.write("Normal Array :  " + a + "<br><br>");
+        
+        //The indexOf() method returns the position of the first occurrence of a value in a string. 
+        //The indexOf() method returns -1 if the value is not found. The indexOf() method is case sensitive.
+        var b=a.indexOf("March", 0);
+        document.write("indexOf method of Array :  " + b + "<br><br>");
+
+        //The lastIndexOf() method returns the index (position) of the last occurrence of a specified value in a string. 
+        //The lastIndexOf() method searches the string from the end to the beginning.
+       // a.splice(1, 0, 'feb');
+        var b=a.lastIndexOf("Jan", 3);
+        document.write("lastindexOf method of Array :  " + b + "<br><br>");
+    </script>
+</body>
+</html>

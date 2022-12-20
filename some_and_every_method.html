@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[28, 8, 9, 50];
+        document.write("Normal Array :  " + a + "<br><br>");
+
+        //The some() method tests whether at least one element in the array passes the test implemented by the provided function. 
+        //It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false.
+
+        var b=a.some(demo);
+        document.write("some method of  Array :  " + b + "<br><br>");
+        function demo(a)
+        {
+            return a>=10;
+        }
+
+        //The every() method executes a function for each array element. 
+        //The every() method returns true if the function returns true for all elements. 
+        //The every() method returns false if the function returns false for one element.
+
+        var c=a.every(demo);
+        document.write("every method of  Array :  " + c + "<br><br>");
+        function demo(a)
+        {
+            return a>=10;
+        }
+    </script>
+</body>
+</html>
