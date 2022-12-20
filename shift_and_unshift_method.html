@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[1, "Tops", "xyz", "Abc"];
+        document.write("Normal Array :  " + a + "<br><br>");
+
+        //The shift() method removes the first element from an array and returns that removed element. 
+        //This method changes the length of the array.
+        var b=a.shift();
+        document.write("Shift Method of Array :  " + b + "<br><br>");
+        document.write("Normal Array :  " + a + "<br><br>");
+
+
+        //The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+        a.unshift("Dell");
+        document.write("UnShift Method of Array :  " + a + "<br><br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=['Jan', 'March', 'April', 'June'];
+        document.write("Normal Array :  " + a + "<br><br>");
+        //The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end ( end not included) 
+        //where start and end represent the index of items in that array.
+        var b=a.slice(0,2);
+        document.write("Slice method of Array :  " + b + "<br><br>");
+
+        //The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+        a.splice(1, 0, 'feb');
+        // inserts at index 1
+        document.write("Splice method of Array :  " + a + "<br><br>");
+
+        a.splice(4, 1, 'May');
+        // inserts at index 3 and replace by after 1 st index of 3rd
+        document.write("Splice method of Array :  " + a + "<br><br>");
+    </script>
+    
+</body>
+</html>
